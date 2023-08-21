@@ -1,3 +1,5 @@
+import json
+
 class MedicamentoQuimioterapico:
     """
     Necessita de nome do medicamento, principal composto do medicamento, laboratorio, descricao do medicamento e se ele necessita de receita.

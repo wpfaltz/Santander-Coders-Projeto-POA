@@ -1,3 +1,5 @@
+import json
+
 class MedicamentoFitoterapico:
     """
     Necessita de nome do medicamento, principal composto do medicamento, laboratorio, descricao do medicamento.

@@ -1,3 +1,5 @@
+import json
+
 class Laboratorio:
     """
     Necessita do nome do laboratorio, endereco, telefone, cidade e estado em que se localiza.
@@ -16,3 +18,13 @@ class Laboratorio:
         self.telefone = telefone
         self.cidade = cidade
         self.estado = estado
+
+    @staticmethod
+    def carregar_laboratorios():
+        with open(r'src/db/laboratorios.json', "r") as file:
+            return json.load(file)
+    
+    @staticmethod
+    def salvar_laboratorios(laboratorios):
+        with open(r'src/db/laboratorios.json', "w") as file:
+            json.dump(laboratorios, file, indent=4)
